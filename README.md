@@ -20,24 +20,26 @@ click and make a database named brett
 
 click and make a table named users with this structure:
 
-username: varchar 24
+username: varchar 128
 
-password: varchar 24
+password: varchar  128
 
-email: varchar 24
+email: varchar  128
 
-creditcard: varchar 24
+creditcard: varchar  128
+
+animal: varchar 128
 
 
 then click insert and put some users in. don't forget to click go!
 
 you get stuff like this going on:
 
-INSERT INTO `users` (`username`, `password`, `email`, `creditcard`) VALUES ('miyuki', 'hello', 'm@m.com', '3533497685860304');
+INSERT INTO `users` (`username`, `password`, `email`, `creditcard`, `animal`) VALUES ('miyuki', 'hello', 'm@m.com', '3533497685860304', '');
 
-INSERT INTO `users` (`username`, `password`, `email`, `creditcard`) VALUES ('admin', 'password', 'admin@app.com', '4024007183948511');
+INSERT INTO `users` (`username`, `password`, `email`, `creditcard`, `animal`) VALUES ('admin', 'password', 'admin@app.com', '4024007183948511', '');
 
-INSERT INTO `users` (`username`, `password`, `email`, `creditcard`) VALUES ('brett', 'Hell123!', 'brett@app.com', '349256618723322');
+INSERT INTO `users` (`username`, `password`, `email`, `creditcard`, `animal`) VALUES ('brett', 'Hell123!', 'brett@app.com', '349256618723322', '');
 
 
 
@@ -49,15 +51,15 @@ you want to get to this point:
 
 sql: SELECT * FROM users WHERE username = 'brett' and password = '' or 1=1;-- '
 
-Select returned 2 rows.
+Select returned 3 rows.
 
-Email: admin@app.com,CreditCard: 4024007183948511,Password: password
+Animal:, Email: admin@app.com, CreditCard: 4024007183948511, Password: password
 
-Email: brett@app.com,CreditCard: 349256618723322,Password: Hello123! 
+Animal:, Email: brett@app.com, CreditCard: 349256618723322, Password: Hello123! 
 
-Email:m@m.com,CreditCard: 3533497685860304,Password: hello 
+Animal:, Email:m@m.com, CreditCard: 3533497685860304, Password: hello 
 
-
+When you login, you can add an animal.  Here is where you can add in some reflected and stored XSS
 
 
 
