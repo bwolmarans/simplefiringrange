@@ -18,9 +18,7 @@ systemctl restart apache2
 
 click and make a database named brett
 
-#click and make a table named users
-
-users structure:
+click and make a table named users with this structure:
 
 username: varchar 24
 
