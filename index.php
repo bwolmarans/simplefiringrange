@@ -5,8 +5,8 @@
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
 
-      $myusername = mysqli_real_escape_string($db,$_POST['username']);
-      $mypassword = mysqli_real_escape_string($db,$_POST['password']);
+      $myusername = mysqli_real_escape_string($conn,$_POST['username']);
+      $mypassword = mysqli_real_escape_string($conn,$_POST['password']);
 
       $myusername = $_POST['username'];
       $mypassword = $_POST['password'];
@@ -14,7 +14,7 @@
       $sql = "SELECT * FROM users WHERE username = '$myusername' and password = '$mypassword'";
       echo 'sql: ' . $sql . '<br><br>';
 
-      $result = mysqli_query($db,$sql);
+      $result = mysqli_query($conn, $sql);
       printf("Select returned %d rows. <br><br>", mysqli_num_rows($result));
       $rows = mysqli_fetch_all($result,MYSQLI_ASSOC);
       $count = mysqli_num_rows($result);
@@ -23,7 +23,6 @@
       endforeach;
 
       if($count > 0) {
-         echo 1;
          $_SESSION['login_user'] = $myusername;
          $_SESSION['username'] = $myusername;
          $_SESSION['password'] = $mypassword;

@@ -7,18 +7,14 @@
       $sql = "SELECT * FROM users WHERE username = '$myusername' and password = '$mypassword'";
       echo 'sql: ' . $sql . '<br><br>';
 
-      $result = mysqli_query($conn, $sql);
-	/* check connection */
-	if (mysqli_connect_errno()) {
-	    printf("Connect failed: %s\n", mysqli_connect_error());
-	    exit();
-	}
+      $result = mysqli_query($db,$sql);
       printf("Select returned %d rows. <br><br>", mysqli_num_rows($result));
       $rows = mysqli_fetch_all($result,MYSQLI_ASSOC);
       $count = mysqli_num_rows($result);
       foreach( $rows as $row ):
-        printf ("Username: %s, Animal: %s, Email: %s, CreditCard: %s, Password: %s <br><br>", $row["username"], $row["animal"], $row["email"], $row["creditcard"], $row["password"]);
+        printf ("Username: %s,Email: %s,CreditCard: %s,Password: %s <br><br>", $row["username"], $row["email"], $row["creditcard"], $row["password"]);
       endforeach;
+
 
    $user_check = $_SESSION['login_user'];
 
