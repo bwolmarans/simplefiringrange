@@ -33,7 +33,7 @@ then click insert and put some users in. don't forget to click go!
 
 you get stuff like this going on:
 
-INSERT INTO `users` (`username`, `password`, `email`, `creditcard`) VALUES ('miyuki', 'hello', 'm@m.com', '');
+INSERT INTO `users` (`username`, `password`, `email`, `creditcard`) VALUES ('miyuki', 'hello', 'm@m.com', '3533497685860304');
 
 INSERT INTO `users` (`username`, `password`, `email`, `creditcard`) VALUES ('admin', 'password', 'admin@app.com', '4024007183948511');
 
