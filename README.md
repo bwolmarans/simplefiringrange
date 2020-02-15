@@ -1,6 +1,9 @@
-# simplefiringrange
+# simplefiringrange aka 80s firing range
 
 for Ubuntu 16
+mysqli has fixed the classic owasp top 10 attacks against mysql.  
+so in this firing range, for whatever reason, we're not using mysqli.
+
 
 apt install apache2 mysql-server php php-mysqli php-gd libapache2-mod-php git
 
