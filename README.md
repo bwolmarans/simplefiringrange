@@ -26,7 +26,7 @@ INSERT INTO `users` (`username`, `password`, `email`, `creditcard`) VALUES ('bre
 
 now yolu should be able to browser and get stuff going
 
-try this: enter ' or 1=1;-- for the password
+try this: enter ' or 1=1;## for the password
 
 you want to get to this point:
 
