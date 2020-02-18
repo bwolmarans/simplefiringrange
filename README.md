@@ -22,16 +22,17 @@ click and make a database named brett
 
 click and make a table named users with this structure:
 
-username: varchar 128
+username: varchar 111
 
-password: varchar  128
+password: varchar  111
 
-email: varchar  128
+email: varchar  111
 
-creditcard: varchar  128
+creditcard: varchar  111
 
-animal: varchar 128
+animal: varchar 111
 
+CREATE TABLE `brett`.`users` ( `username` VARCHAR(111) NOT NULL , `password` VARCHAR(111) NOT NULL , `email` VARCHAR(111) NOT NULL , `creditcard` VARCHAR(111) NOT NULL , `animal` VARCHAR(111) NOT NULL ) ENGINE = InnoDB;
 
 then click insert and put some users in. don't forget to click go!
 
