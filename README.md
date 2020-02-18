@@ -70,6 +70,8 @@ Animal:, Email:m@m.com, CreditCard: 3533497685860304, Password: hello
 
 When you login, you can add an animal.  Here is where you can add in some reflected and stored XSS
 
+Try naming your animal <script>alert('hacked!');</script>
+
 
 
 
