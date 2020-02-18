@@ -4,6 +4,8 @@ for Ubuntu 16
 mysqli has fixed the classic owasp top 10 attacks against mysql.  
 so in this firing range, for whatever reason, we're not using mysqli.
 
+First become root on your linux box.
+my examples below use ubuntu 16.
 
 apt install apache2 mysql-server php php-mysqli php-gd libapache2-mod-php git
 
@@ -44,7 +46,11 @@ INSERT INTO `users` (`username`, `password`, `email`, `creditcard`, `animal`) VA
 
 INSERT INTO `users` (`username`, `password`, `email`, `creditcard`, `animal`) VALUES ('brett', 'Hell123!', 'brett@app.com', '349256618723322', '');
 
-
+now on your ubuntu 16 box:
+cd /var/www
+git clone https://github.com/bwolmarans/simplefiringrange.git
+mv html html_original
+mv simplefiringrange html
 
 now you should be able to browser and get stuff going
 
