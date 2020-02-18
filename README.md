@@ -7,15 +7,14 @@ so in this firing range, for whatever reason, we're not using mysqli.
 
 apt install apache2 mysql-server php php-mysqli php-gd libapache2-mod-php git
 
-During this fun process, mysql should pop up a big purple screen asking for root password do your thang make that password hello123 do it!
+During this fun process, mysql should pop up a big purple screen asking for root password do your thang make that password hello123 do it!  
 
 apt-get install phpmyadmin php-mbstring php-gettext
-
-vi config.inc.php and adjust the password
+phpmyadmin will likewise ask you to input a password, using a purple page.
 
 systemctl restart apache2
 
-<site>/phpmyadmin
+<site>/phpmyadmin, login as root and the password from the purple page
   
 # got gui? 
 
