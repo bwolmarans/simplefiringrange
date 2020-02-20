@@ -28,7 +28,7 @@
       <label>What is your fave animal? (We store it in your user record as a 2nd factor):</label><input type = "text" name = "animal"/><br/><br/>
       <input type = "submit" value = " Submit "/><br />
       </form>
-      <h2><a href = "logout.php">Sign Out</a></h2>
+      <h2><a href = "index.php">Sign Out</a></h2>
    </body>
 
 </html>
