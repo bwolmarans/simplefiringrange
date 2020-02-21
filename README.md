@@ -44,7 +44,9 @@ INSERT INTO `users` (`username`, `password`, `email`, `creditcard`, `animal`) VA
 
 INSERT INTO `users` (`username`, `password`, `email`, `creditcard`, `animal`) VALUES ('admin', 'password', 'admin@app.com', '4024007183948511', '');
 
-INSERT INTO `users` (`username`, `password`, `email`, `creditcard`, `animal`) VALUES ('brett', 'Hell123!', 'brett@app.com', '349256618723322', '');
+INSERT INTO `users` (`username`, `password`, `email`, `creditcard`, `animal`) VALUES ('brett', 'Hello123!', 'brett@app.com', '349256618723322', '');
+
+INSERT INTO users (username, password, email, creditcard, animal) VALUES ('itsbrett@gmail.com', 'hello123', 'brett@app.com', '349256618723322', '');
 
 now on your ubuntu 16 box:
 cd /var/www
