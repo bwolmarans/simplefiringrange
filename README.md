@@ -11,8 +11,11 @@ apt install apache2 mysql-server php php-mysqli php-gd libapache2-mod-php git
 
 During this fun process, mysql should pop up a big purple screen asking for root password do your thang make that password hello123 do it!  
 
+
 apt-get install phpmyadmin php-mbstring php-gettext
+
 phpmyadmin will likewise ask you to input a password, using a purple page.
+
 
 systemctl restart apache2
 
