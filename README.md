@@ -21,6 +21,23 @@ systemctl restart apache2
 
 <site>/phpmyadmin, login as phpmyadmin ( or root? )   and the password from the purple page
   
+TESTING
+
+mysql --user=root --password=hello123 -e "SELECT 1+1"
+
++-----+
+| 1+1 |
++-----+
+|   2 |
++-----+
+
+TROUBLESHOOTING
+
+change mysql root password:  mysqladmin --user=root password "hello123"
+
+give phpmyadmin full rights: FLUSH PRIVILEGES; GRANT ALL PRIVILEGES ON *.* TO phpmyadmin@localhost
+
+  
 # got gui? 
 
 click and make a database named brett
