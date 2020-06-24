@@ -34,7 +34,18 @@ TROUBLESHOOTING
 
 change mysql root password:  mysqladmin --user=root password "hello123"
 
-give phpmyadmin full rights: FLUSH PRIVILEGES; GRANT ALL PRIVILEGES ON *.* TO phpmyadmin@localhost
+give phpmyadmin full rights: 
+
+mysql
+
+FLUSH PRIVILEGES; GRANT ALL PRIVILEGES ON *.* TO phpmyadmin@localhost;
+
+give root all rights:
+
+mysql
+
+FLUSH PRIVILEGES; GRANT ALL PRIVILEGES ON *.* TO root@localhost;
+
 
   
 # got gui? 
