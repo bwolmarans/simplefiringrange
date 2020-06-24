@@ -20,8 +20,8 @@ phpmyadmin will likewise ask you to input a password, using a purple page.
 systemctl restart apache2
 
   
-TESTING
-
+###### TESTING
+```
 mysql --user=root --password=hello123 -e "SELECT 1+1"
 
 +-----+
@@ -29,24 +29,22 @@ mysql --user=root --password=hello123 -e "SELECT 1+1"
 +-----+
 |   2 |
 +-----+
+```
+###### TROUBLESHOOTING
 
-TROUBLESHOOTING
-
-change mysql root password:  mysqladmin --user=root password "hello123"
+change mysql root password: `mysqladmin --user=root password "hello123"`
 
 give phpmyadmin full rights: 
 
 mysql
 
-FLUSH PRIVILEGES; GRANT ALL PRIVILEGES ON *.* TO phpmyadmin@localhost;
+`FLUSH PRIVILEGES; GRANT ALL PRIVILEGES ON *.* TO phpmyadmin@localhost;`
 
 give root all rights:
 
 mysql
 
-FLUSH PRIVILEGES; GRANT ALL PRIVILEGES ON *.* TO root@localhost;
-
-
+`LUSH PRIVILEGES; GRANT ALL PRIVILEGES ON *.* TO root@localhost;`
   
 # got gui? 
 
