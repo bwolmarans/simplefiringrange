@@ -19,7 +19,7 @@ phpmyadmin will likewise ask you to input a password, using a purple page.
 
 systemctl restart apache2
 
-<site>/phpmyadmin, login as root and the password from the purple page
+<site>/phpmyadmin, login as phpmyadmin ( or root? )   and the password from the purple page
   
 # got gui? 
 
