@@ -1,7 +1,7 @@
 # simplefiringrange aka 80s firing range
 
 18.04
-
+```
 root@ip-10-0-4-89:~/docker-lamp# docker run -p "80:80" -v ${PWD}/app:/app mattrayner/lamp:latest-1804
 Updating for 7.4
 => An empty or uninitialized MySQL volume is detected in /var/lib/mysql
@@ -39,7 +39,7 @@ CONTAINER ID        IMAGE                         COMMAND             CREATED   
 da4fc5b552bd        mattrayner/lamp:latest-1804   "/run.sh"           About an hour ago   Up About an hour    0.0.0.0:80->80/tcp, 3306/tcp   condescending_hoover
 wget https://raw.githubusercontent.com/bwolmarans/simplefiringrange/master/brett.mysql
 cat brett.mysql | docker exec -i da4fc5b552bd mysql
-
+```
 
 for Ubuntu 16
 mysqli has fixed the classic owasp top 10 attacks against mysql.  
