@@ -11,6 +11,9 @@ mkdir ~/app
 cd app
 git clone https://github.com/bwolmarans/simplefiringrange.git
 cp simplefiringrange/* .
+```
+OK so now we've got the app installed locally, let's use docker to run a lamp stack in the backround:
+```
 docker run -p "80:80" -v ${PWD}/app:/app mattrayner/lamp:latest-1804 &
 Updating for 7.4
 => An empty or uninitialized MySQL volume is detected in /var/lib/mysql
