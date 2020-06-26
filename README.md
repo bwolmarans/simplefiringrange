@@ -54,7 +54,7 @@ Now let's change that admin password hello123, because that's a good thing app d
 root@ip-10-0-4-89:~# docker ps
 CONTAINER ID        IMAGE                         COMMAND             CREATED             STATUS              PORTS                          NAMES
 da4fc5b552bd        mattrayner/lamp:latest-1804   "/run.sh"           About an hour ago   Up About an hour    0.0.0.0:80->80/tcp, 3306/tcp   condescending_hoover
-cat brett.mysql | docker exec -i da4fc5b552bd mysql
+cat app/brett.mysql | docker exec -i da4fc5b552bd mysql
 ```
 
 for Ubuntu 16
