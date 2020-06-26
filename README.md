@@ -1,13 +1,17 @@
 # simplefiringrange aka 80s firing range
 
 18.04
+
+So normally, this creates a random admin password but for now we'll change it.
+Keep reading.
+
 ```
+cd ~
 mkdir ~/app
-mkdir ~/mysql
 cd app
 git clone https://github.com/bwolmarans/simplefiringrange.git
 cp simplefiringrange/* .
-docker run -p "80:80" -v ${PWD}/app:/app mattrayner/lamp:latest-1804 
+docker run -p "80:80" -v ${PWD}/app:/app mattrayner/lamp:latest-1804 &
 Updating for 7.4
 => An empty or uninitialized MySQL volume is detected in /var/lib/mysql
 => Installing MySQL ...
@@ -38,7 +42,11 @@ enjoy!
 2020-06-26 15:22:51,228 INFO spawned: 'apache2' with pid 504
 2020-06-26 15:22:52,570 INFO success: mysqld entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2020-06-26 15:22:52,571 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+```
 
+Now let's change that admin password hello123, because that's a good thing app devs should do, and let's create our db and our users table and populate it.
+
+```
 root@ip-10-0-4-89:~# docker ps
 CONTAINER ID        IMAGE                         COMMAND             CREATED             STATUS              PORTS                          NAMES
 da4fc5b552bd        mattrayner/lamp:latest-1804   "/run.sh"           About an hour ago   Up About an hour    0.0.0.0:80->80/tcp, 3306/tcp   condescending_hoover
