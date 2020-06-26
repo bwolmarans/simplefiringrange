@@ -11,6 +11,7 @@ mkdir ~/app
 cd app
 git clone https://github.com/bwolmarans/simplefiringrange.git
 cp simplefiringrange/* .
+cd ..
 ```
 OK so now we've got the app installed locally, let's use docker to run a lamp stack in the backround:
 ```
