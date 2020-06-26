@@ -1,4 +1,4 @@
-alter user 'admin@localhost' identified by hello123;
+alter user 'admin' identified by 'hello123';
 CREATE DATABASE brett;
 USE brett;
 -- MySQL dump 10.13  Distrib 5.7.30, for Linux (x86_64)
