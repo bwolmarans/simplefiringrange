@@ -1,12 +1,9 @@
 # simplefiringrange 
-### This allows many OWASP top 10 type attacks, and more
-### without a rich complex application.
-### There are enough of those IMHO
-### Now as a Docker Conatainer!
-### Run it everywhere you have Docker!
+
+This allows many OWASP top 10 type attacks, and more without a rich complex application. There are enough of those IMHO.
+Now as a Docker Conatainer! Run it everywhere you have Docker!
 
 So normally, mattrayners container creates a random mysql admin password but for now we'll change it to a hard coded one, one of our favourites. 
-Keep reading.
 
 ```
 cd ~
