@@ -12,8 +12,12 @@ mkdir app
 git clone https://github.com/bwolmarans/simplefiringrange.git app
 ```
 OK so now we've got the app installed locally, let's use docker to run a lamp stack with a little ampersand to run it in the backround:
+
 ```
 docker run -p "80:80" -v ${PWD}/app:/app mattrayner/lamp:latest-1804 &
+```
+( and that command outputs the following ) 
+```
 Updating for 7.4
 => An empty or uninitialized MySQL volume is detected in /var/lib/mysql
 => Installing MySQL ...
