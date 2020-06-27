@@ -1,12 +1,11 @@
 # simplefiringrange 
-## This allows many OWASP top 10 type attacks, and more
-## without a rich complex application.
-## There are enough of those IMHO
+### This allows many OWASP top 10 type attacks, and more
+### without a rich complex application.
+### There are enough of those IMHO
+### Now as a Docker Conatainer!
+### Run it everywhere you have Docker!
 
-## Now as a Docker Conatainer!
-## Run it everywhere you have Docker!
-
-So normally, mattrayners conatiner  creates a random mysql admin password but for now we'll change it to a hard coded one, one of our favourites. 
+So normally, mattrayners container creates a random mysql admin password but for now we'll change it to a hard coded one, one of our favourites. 
 Keep reading.
 
 ```
@@ -60,6 +59,8 @@ CONTAINER ID        IMAGE                         COMMAND             CREATED   
 da4fc5b552bd        mattrayner/lamp:latest-1804   "/run.sh"           About an hour ago   Up About an hour    0.0.0.0:80->80/tcp, 3306/tcp   condescending_hoover
 cat app/brett.mysql | docker exec -i da4fc5b552bd mysql
 ```
+
+# IGNORE EVERYTHING BELOW THIS LINE
 
 for Ubuntu 16
 mysqli has fixed the classic owasp top 10 attacks against mysql.  
