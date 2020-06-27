@@ -5,15 +5,13 @@ Now as a Docker Conatainer! Run it everywhere you have Docker!
 
 So normally, mattrayners container creates a random mysql admin password but for now we'll change it to a hard coded one, one of our favourites. 
 
+Let's get our website app:
 ```
 cd ~
-mkdir ~/app
-cd app
-git clone https://github.com/bwolmarans/simplefiringrange.git
-cp simplefiringrange/* .
-cd ..
+mkdir app
+git clone https://github.com/bwolmarans/simplefiringrange.git app
 ```
-OK so now we've got the app installed locally, let's use docker to run a lamp stack in the backround:
+OK so now we've got the app installed locally, let's use docker to run a lamp stack with a little ampersand to run it in the backround:
 ```
 docker run -p "80:80" -v ${PWD}/app:/app mattrayner/lamp:latest-1804 &
 Updating for 7.4
@@ -48,7 +46,7 @@ enjoy!
 2020-06-26 15:22:52,571 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 ```
 
-Now let's change that admin password hello123, because that's a good thing app devs should do, and let's create our db and our users table and populate it.
+Now let's dump in some sql, you can see it will change that admin password hello123, because that's a good thing app devs should do, and let's create our db and our users table and populate it.
 
 ```
 root@ip-10-0-4-89:~# docker ps
@@ -56,6 +54,8 @@ CONTAINER ID        IMAGE                         COMMAND             CREATED   
 da4fc5b552bd        mattrayner/lamp:latest-1804   "/run.sh"           About an hour ago   Up About an hour    0.0.0.0:80->80/tcp, 3306/tcp   condescending_hoover
 cat app/brett.mysql | docker exec -i da4fc5b552bd mysql
 ```
+
+Now, you can hit the site on port 80 and have at it!
 
 # IGNORE EVERYTHING BELOW THIS LINE
 
