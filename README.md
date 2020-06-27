@@ -1,8 +1,12 @@
-# simplefiringrange aka 80s firing range
+# simplefiringrange 
+## This allows many OWASP top 10 type attacks, and more
+## without a rich complex application.
+## There are enough of those IMHO
 
-18.04
+## Now as a Docker Conatainer!
+## Run it everywhere you have Docker!
 
-So normally, this creates a random admin password but for now we'll change it.
+So normally, mattrayners conatiner  creates a random mysql admin password but for now we'll change it to a hard coded one, one of our favourites. 
 Keep reading.
 
 ```
